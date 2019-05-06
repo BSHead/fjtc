@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@drawable/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="售卖设置"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sz_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A出口冰淇淋口味设置"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/taste_a_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="口味设置"
+                        android:textColor="@color/textColor1" />
+                    <org.angmarch.views.NiceSpinner
+                        android:id="@+id/nice_spinner_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:arrowTint="#111"
+                        app:textTint="#03f"
+                        app:dropDownListPaddingBottom="60dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColor2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="价格设置"
+                        android:textColor="@color/textColor1" />
+
+                    <EditText
+                        android:id="@+id/setting_price_a"
+                        style="@style/Four"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="请设置价格"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="30dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColor2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中间出口冰淇淋口味设置"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="口味设置"
+                        android:textColor="@color/textColor1" />
+
+                    <TextView
+                        android:id="@+id/taste_b_layout_text_view"
+                        android:background="@null"
+                        style="@style/Four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="混合口味"
+                        android:paddingLeft="30dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColor2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="价格设置"
+                        android:textColor="@color/textColor1" />
+
+                    <EditText
+                        android:id="@+id/setting_price_c"
+                        style="@style/Four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="请设置价格"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="30dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColor2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B出口冰淇淋口味设置"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/taste_b_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="口味设置"
+                        android:textColor="@color/textColor1" />
+
+                    <org.angmarch.views.NiceSpinner
+                        android:id="@+id/nice_spinner_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:arrowTint="#111"
+                        app:textTint="#03f"
+                        app:dropDownListPaddingBottom="60dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColor2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="价格设置"
+                        android:textColor="@color/textColor1" />
+
+                    <EditText
+                        android:id="@+id/setting_price_b"
+                        style="@style/Four"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="请设置价格"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="30dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColor2" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok_setting_goods_info"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg"
+                android:text="确定"
+                android:textColor="@color/backgroundColor1" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

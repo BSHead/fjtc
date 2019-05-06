@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".clean_activity.CleanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include layout="@layout/title"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="1.将盆摆放在冰激凌出口的下方,点击按钮让冰激凌从不同料口排出，待冰激凌全部排出后点击下一步。"
+            android:textSize="23dp"
+            android:textColor="#333"
+            android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <Button
+            android:button="@null"
+            android:id="@+id/a_btn_one"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_bg"
+            android:text="A口"
+            android:textColor="@color/backgroundColor1"
+            />
+        <Button
+            android:button="@null"
+            android:id="@+id/b_btn_one"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_bg"
+            android:text="B口"
+            android:textColor="@color/backgroundColor1"
+            />
+        <com.example.panda.myapplication.utils.SwitchButton
+            android:id="@+id/sButton_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/a_btn_one"
+            android:layout_marginLeft="30dp"/>
+        <com.example.panda.myapplication.utils.SwitchButton
+            android:id="@+id/sButton_b"
+            android:layout_below="@id/b_btn_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"/>
+        <LinearLayout
+            android:layout_below="@id/sButton_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/c_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/button_bg"
+                android:text="C口"
+                android:textColor="@color/backgroundColor1" />
+
+            <com.example.panda.myapplication.utils.SwitchButton
+                android:id="@+id/sButton_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="270dp"
+            android:src="@drawable/clean_img"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/next_btn_one"
+            android:layout_weight="1"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+           android:layout_marginBottom="10dp"
+            android:background="@drawable/button_bg"
+            android:text="完成"
+            android:textColor="@color/backgroundColor1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

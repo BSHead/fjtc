@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".replenishment_activity.ReplenishmentActivityTwo">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@drawable/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="补货"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bh_back_two"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="2.将盆里的冰激凌粉倒入量杯中，倒入料缸内，然后点击完成"
+            android:textSize="23dp"
+            android:textColor="#333"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="250dp"
+            android:layout_height="270dp"
+            android:src="@drawable/ds"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/bu_wc"
+            android:layout_weight="1"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:src="@drawable/accomplish"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

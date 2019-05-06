@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="375dp"
+    android:orientation="vertical"
+ >
+    <TextView
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="通知"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:background="#00FF99"/>
+    <TextView
+        android:id="@+id/pop_content"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="售卖机异常"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/pop_shelid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="机器名称:asdjsgdasj"
+        android:layout_marginLeft="10dp"
+        android:textSize="19dp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/pop_createTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日期:"
+        android:textSize="19dp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"/>
+    <Button
+        android:id="@+id/pop_but"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text="确认"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@drawable/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:textColor="@color/textcolor"
+            android:gravity="center"
+            android:text="首页"
+            android:layout_marginTop="3dp"
+            android:button="@null"
+            android:drawableTop="@drawable/homepage"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:textColor="@color/textcolor"
+            android:gravity="center"
+            android:text="明细"
+            android:layout_marginTop="3dp"
+            android:drawableTop="@drawable/detailpage"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:textColor="@color/textcolor"
+            android:gravity="center"
+            android:text="我的"
+            android:layout_marginTop="3dp"
+            android:drawableTop="@drawable/mysele"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RadioGroup>
+
+
+
+
+
+</LinearLayout>
